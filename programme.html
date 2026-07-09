@@ -1,25 +1,259 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>programme-AfriConnectSummit</title>
+    
 </head>
 <body>
-    <header>
-
+    <!--- NAVBAR--->
+    <header class="navbar">
+        <div class="logo">AfriConnectSummit 2026</div>
         <nav>
-
+<ul class="nav-links">
+     <li><a href="index.html">Accueil</a>
+</li>
+  <li><a href="programme.html">Programme</a>
+</li>
+  <li><a href="intervenants.html">Intervenants</a>
+</li>
+  <li><a href="contact.html">Contact</a>
+</li>
+</ul>
         </nav>
     </header>
-
     <main>
+<!---HERO INTERNE-->
+<section class="hero-interne">
+    <h1>Programme de la Conférence</h1>
+<nav class="fil-ariane">
+    <a href="index.html">Accueil</a>&gt;
+    <span>Programme</span>
+</nav>
+</section> 
+<!--ONGLETS DE 3 JOURS--> 
+<section class="programme">
+    <h2>Planning des 3 jours</h2>
+    <!--BOUTONS ONGLETS-->
+    <div class="tabs">
+        <button class="tab-btn active" data-tab="jour1">Jour 1</button>
+         <button class="tab-btn" data-tab="jour2">Jour 2</button>
+          <button class="tab-btn" data-tab="jour3">Jour 3</button>
+    </div>
+<!--CONTENU ONGLET JOUR 1-->
+<div id="jour1" class="tab-content active">
+    <h3>15 Mars 2026 - Innovation & Tendances</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Heure</th>
+                <th>Session</th>
+                <th>Intervenants</th>
+                <th>Salle</th>
+            </tr>
+        </thead>
+                        <tbody>
+                        <tr>
+                            <td>09h00 - 10h00</td>
+                            <td>Cérémonie d'ouverture</td>
+                            <td>Comité d'organisation</td>
+                            <td>Amphi A</td>
+                        </tr>
+                        <tr>
+                            <td>10h30 - 12h00</td>
+                            <td>Panel: L'IA au service du développement africain</td>
+                            <td>Dr. Aïssatou Ndiaye</td>
+                            <td>Amphi A</td>
+                        </tr>
+                        <tr>
+                            <td>12h00 - 14h00</td>
+                            <td>Pause déjeuner & Networking</td>
+                            <td>-</td>
+                            <td>Hall</td>
+                        </tr>
+                        <tr>
+                            <td>14h00 - 15h30</td>
+                            <td>Workshop: Cloud et Cybersécurité</td>
+                            <td>M. Koffi Asante</td>
+                            <td>Salle B1</td>
+                        </tr>
+                        <tr>
+                            <td>16h00 - 17h30</td>
+                            <td>Keynote: L'avenir du Web3 en Afrique</td>
+                            <td>Mme. Salma El Amrani</td>
+                            <td>Amphi A</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
 
+            <!-- Contenu Onglet Jour 2 -->
+            <div id="jour2" class="tab-content">
+                <h3>16 Mars 2026 - Fintech & Entrepreneuriat</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Heure</th>
+                            <th>Session</th>
+                            <th>Intervenant</th>
+                            <th>Salle</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>09h00 - 10h30</td>
+                            <td>Workshop: Créer une startup Tech</td>
+                            <td>Dr. Chinedu Okoro</td>
+                            <td>Salle B2</td>
+                        </tr>
+                        <tr>
+                            <td>10h45 - 12h15</td>
+                            <td>Table ronde: Financement et Investissement</td>
+                            <td>Panel d'investisseurs</td>
+                            <td>Amphi A</td>
+                        </tr>
+                        <tr>
+                            <td>12h15 - 14h00</td>
+                            <td>Pause déjeuner & Networking</td>
+                            <td>-</td>
+                            <td>Hall</td>
+                        </tr>
+                        <tr>
+                            <td>14h00 - 15h30</td>
+                            <td>Pitch: 10 startups africaines</td>
+                            <td>Startups sélectionnées</td>
+                            <td>Amphi B</td>
+                        </tr>
+                        <tr>
+                            <td>16h00 - 17h30</td>
+                            <td>Conférence: Paiement mobile et inclusion</td>
+                            <td>Dr. Chinedu Okoro</td>
+                            <td>Amphi A</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Contenu Onglet Jour 3 -->
+            <div id="jour3" class="tab-content">
+                <h3>17 Mars 2026 - Impact & Avenir</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Heure</th>
+                            <th>Session</th>
+                            <th>Intervenant</th>
+                            <th>Salle</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>09h00 - 10h30</td>
+                            <td>Keynote: L'Afrique digitale à l'horizon 2030</td>
+                            <td>Mme. Salma El Amrani</td>
+                            <td>Amphi A</td>
+                        </tr>
+                        <tr>
+                            <td>10h45 - 12h15</td>
+                            <td>Panel: Femmes et Tech en Afrique</td>
+                            <td>Dr. Aïssatou Ndiaye</td>
+                            <td>Amphi B</td>
+                        </tr>
+                        <tr>
+                            <td>12h15 - 14h00</td>
+                            <td>Pause déjeuner & Networking</td>
+                            <td>-</td>
+                            <td>Hall</td>
+                        </tr>
+                        <tr>
+                            <td>14h00 - 15h30</td>
+                            <td>Workshop: Data et Intelligence Artificielle</td>
+                            <td>M. Koffi Asante</td>
+                            <td>Salle B1</td>
+                        </tr>
+                        <tr>
+                            <td>16h00 - 17h00</td>
+                            <td>Cérémonie de clôture</td>
+                            <td>Tous les intervenants</td>
+                            <td>Amphi A</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+<!--SECTION THEMATIQUES-->
+<section class="thématiques">
+
+    <h2>Les 4 Thématiques Clés</h2>
+    <div class="grid-thématiques">
+        <div class="thématique">
+            <article>
+        <p>🤖</p>
+        <h3>Intelligence Artificielle</h3>
+        <p>Comment l'IA transforme les secteurs clés en Afrique</p>
+    </div>
+    </article>
+    <div class="thématique">
+     <p>💳</p>
+     <article>
+        <h3>Fintech & Paiement</h3>
+        <p>L'Innovation financiére pour une inclusion totale</p>
+    </div>
+    </article>
+    <article>
+    <div class="thématique">
+        <p>☁️</p>
+        <h3>Cloud & Cybersécurité</h3>
+        <p>Sécuriser et scaler les infrastructures digitales</p>
+    </div>
+    </article>
+<article>
+    <div class="thématique">
+        <p>🚀</p>
+        <h3>Entrepreneuriat Tech</h3>
+        <p>Batir et financer la prochaine licorne africaine</p>
+    </div>
+    </article>
+</div>
+</section>
     </main>
-
+    <!--FOOTER-->
     <footer>
-        
-    </footer>
-    <script src="js/main.js"></script>
+    <section>
+        <h4>AfriConnectSummit</h4>
+        <p>Le rendez-vous panafricain de l'innovation</p>
+    </section>
+    <section>
+        <h4>Navigation</h4>
+        <ul>
+             <li><a href="index.html">Accueil</a>
+</li>
+  <li><a href="programme.html">Programme</a>
+</li>
+  <li><a href="intervenants.html">Intervenants</a>
+</li>
+  <li><a href="contact.html">Contact</a>
+</li>
+</ul>
+</section>
+<section>
+    <h4>Suivez-nous</h4>
+</section>
+    <div class="footer-col">
+        <h4>Réseaux sociaux</h4>
+        <a href="#">twitter</a>
+        <a href="#">Linkedin</a>
+        <a href="#">Facebook</a>
+        <a href="#">Instagram</a>
+        <a href="#">Youtube</a>
+    </div>
+    <button id="back-to-top">↑</button>
+    <p>© <span id="year"></span>AfriConnectSummit.Tous droits réservés</p>
+    <p><a href="#"Retour en haut></a></p>
+ </footer>
 </body>
 </html>
+
+
+       

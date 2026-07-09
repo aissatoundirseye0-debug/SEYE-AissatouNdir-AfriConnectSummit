@@ -1,25 +1,158 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>intervenants-AfriConnectSummit</title>
 </head>
 <body>
-    <header>
+    <!--- NAVBAR--->
+    <header class="navbar">
+        <div class="logo">AfriConnectSummit 2026</div>
 
-        <nav>
-
+        <nav class="nav-links"  id="nav-links">
+<ul>
+     <li><a href="index.html">Accueil</a>
+</li>
+  <li><a href="programme.html">¨Programme</a>
+</li>
+  <li><a href="intervenants.html">Intervenants</a>
+</li>
+  <li><a href="contact.html">Contact</a>
+</li>
+</ul>
         </nav>
     </header>
-
     <main>
+<!--HERO INTERNE-->
+<section class="hero-interne">
+<h1>Nos intervenants</h1>
+<nav class="fil-ariane">
+    <a href="index.html">Accueil</a>&gt;
+    <span>Intervenants</span>
+</nav>
+</section>
+<!--Filtrage Dynamique-->
+<section class="intervenants">
+    <div class="filtres">
+        <button class="filtre-btn active" data-filtre="tous">Tous</button>
+    <button class="filtre-btn" data-filtre="ia-tech">IA & Tech</button>
+    <button class="filtre-btn" data-filtre="business">Business</button>
+     <button class="filtre-btn" data-filtre="design">Design</button>
+      <button class="filtre-btn" data-filtre="data">Data</button>
+    </div>
+</section>
+<!---LES 9 INTERVENANTS-->
+<div class="grid-intervenants">
+    <div class="intervenant-card" data-categorie="ia-tech">
+        <article>
+        <img src="images/aissatou-ndir-seye.webp" alt="Aissatou SEYE" width="400">
+                            <h3>Aissatou SEYE</h3>
+                    <p class="specialite">Intelligence Artificielle</p>
+                    <p class="pays">Sénégal</p>
+                </div>
+</article>
+                <div class="intervenant-card" data-categorie="business">
+                    <article>
+                    <img src="images/542980-e80bb444-large.jpg" alt="Kwame MENSAH" width="400">
+                    <h3>Kwame MENSAH</h3>
+                    <p class="specialite">Entrepreneuriat</p>
+                    <p class="pays">Ghana</p>
+                </div>
+                    </article>
+                <div class="intervenant-card" data-categorie="design">
+                    <article>
+                    <img src="images/4385015-nair-nany.avif" alt="Fatima El AMRANI" width="400">
+                    <h3>Fatima El AMRANI</h3>
+                    <p class="specialite">UX/UI Design</p>
+                    <p class="pays">Maroc</p>
+                </div>
+</article>
+                <div class="intervenant-card" data-categorie="data">
+                    <article>
+                    <img src="images/OIP.webp" alt="John OTIENO" width="400">
+                    <h3>John OTIENO</h3>
+                    <p class="specialite">Data Science</p>
+                    <p class="pays">Kenya</p>
+                </div>
+</article>
+                <div class="intervenant-card" data-categorie="ia-tech">
+                    <article>
+                    <img src="images/serious-computer-programmer-developer-working-office-sitting-desk-coding-project-software-senior-development-187002571.webp" alt="Chinedu Okoro" width="400">
+                    <h3>Chinedu Okoro</h3>
+                    <p class="specialite">Cybersécurité</p>
+                    <p class="pays">Nigeria</p>
+                </div>
+</article>
+                <div class="intervenant-card" data-categorie="business">
+                    <article>
+                    <img src="images/black-white-portrait-beautiful-elegant-260nw-200053346.webp" alt="Aminata SEYE" width="400">
+                    <h3>Aminata SEYE</h3>
+                    <p class="specialite">E-commerce</p>
+                    <p class="pays">Maroc</p>
+                </div>
+</article>
+                <div class="intervenant-card" data-categorie="data">
+                    <article>
+                    <img src="images/1895f9e5-9780-4bd1-961d-3b320e8a6e19.jpg" alt="Koffi ASANTE" width="400">
+                    <h3>Koffi ASANTE</h3>
+                    <p class="specialite">cloud-architect</p>
+                    <p class="pays">Côte d'Ivoire</p>
+                </div>
+                </article>
 
+                <div class="intervenant-card" data-categorie="design">
+                    <article>
+                    <img src="images/Rrrrrrrrrrrrrrrrrrrrrrrrr.jpg" alt="Absa NDIAYE" width="400">
+                    <h3>Absa NDIAYE</h3>
+                    <p class="specialite">Design Produit</p>
+                    <p class="pays">Sénégal</p>
+                </div>
+</article>
+                <div class="intervenant-card" data-categorie="ia-tech">
+                    <article>
+                    <img src="images/istockphoto-1082313848-170667a.jpg" alt="David Mwangi" width="400">
+                    <h3>David Mwangi</h3>
+                    <p class="specialite">Design- lead</p>
+                    <p class="pays">Kenya</p>
+                </div>
+                 </div>
+                 </article>
     </main>
-
-    <footer>
-        
-    </footer>
-    <script src="js/main.js"></script>
+            <!--FOOTER-->
+<footer>
+    <section>
+        <h4>AfriConnectSummit</h4>
+        <p>Le rendez-vous panafricain de l'innovation</p>
+    </section>
+    <section>
+        <h4>Navigation</h4>
+        <ul>
+             <li><a href="index.html">Accueil</a>
+</li>
+  <li><a href="programme.html">Programme</a>
+</li>
+  <li><a href="intervenants.html">Intervenants</a>
+</li>
+  <li><a href="contact.html">Contact</a>
+</li>
+</ul>
+</section>
+<section>
+    <h4>Suivez-nous</h4>
+</section>
+    <div class="footer-col">
+        <h4>Réseaux sociaux</h4>
+        <a href="#">twitter</a>
+        <a href="#">Linkedin</a>
+        <a href="#">Facebook</a>
+        <a href="#">Instagram</a>
+        <a href="#">Youtube</a>
+    </div>
+    <button id="back-to-top">↑</button>
+    <p>© <span id="year"></span>AfriConnectSummit.Tous droits réservés</p>
+    <p><a href="#"Retour en haut></a></p>
+ </footer>
 </body>
 </html>
+
