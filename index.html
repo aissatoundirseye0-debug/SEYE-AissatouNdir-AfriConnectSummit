@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accueil-AfriConnectSummit</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <!--- NAVBAR--->
@@ -98,43 +99,39 @@
         <!-- SECTION INTERVENANTS VEDETTES -->
         <section class="speakers">
             <h2>Intervenants Vedettes</h2>
-            <article>
+            <div class="speaker-grid">
+            <article class="speaker-card">
                     <img src="images/pretty-young-high-school-college-teacher-chalkboard-young-caucasian-female-teacher-portrai_265223-93072.avif" alt="Aissatou SEYE" width="350">
                     <h4>Aissatou SEYE</h4>
                     <p>Directrice Générale Orange Digital Center</p>
                     <p>Sénégal</p>
                     </article>
-                </div>
-                <div>
-                    <article>
+               
+                     <article class="speaker-card">
                     <img src="images/i-am-your-new-teacher-teacher-bearded-hipster-with-eyeglasses-sit-in-classroom-chalkboard-background-school-teacher-ready-to-start-lesson-teacher-sit-at-desk-with-la.jpg" alt="Kofi Mensah" width="350">
                     <h4>Kofi Mensah</h4>
                     <p>Fondateur InnovLab</p>
                     <p>Ghana</p>
                     </article>
-                </div>
-                <div>
-                    <article>
+                <article class="speaker-card">
                     <img src="images/portrait-of-confident-young-businesswoman-in-smart-casual-wear-working-on-laptop-in-a-coffee-shop-interior-2BWinformatiqueH754.jpg" alt="Fatima Benali" width="350">
                     <h4>Fatima Benali</h4>
                     <p>Directrice IA</p>
                     <p>Maroc</p>
                     </article>
-                </div>
-                <div>
-                    <article>
+               
+                     <article class="speaker-card">
                     <img src="images/astouuu.jpg" alt="Dr .OKORO" width="350">
                     <h4>Dr . OKORO</h4>
                     <p>Directeur Fintech-flutter</p>
                     <p>Nigeria</p>
                     </article>
                 </div>
-            </div>
             <a href="intervenants.html">Voir tous les intervenants</a>
         </section>
 
         <!-- SECTION SPONSORS -->
-        <section>
+        <section class="sponsors">
       <h2>Nos sponsors</h2>
       <article>
         <h3>Or</h3>
@@ -152,11 +149,14 @@
     </main>
 <!-- FOOTER----->
  <footer>
-    <section>
+    <div class="footer-container">
+        <div class="footer-col">
+    
         <h4>AfriConnectSummit</h4>
         <p>Le rendez-vous panafricain de l'innovation.</p>
-    </section>
-    <section>
+        </div>
+   
+        <div>
         <h4>Navigation</h4>
         <ul>
              <li><a href="index.html">Accueil</a>
@@ -168,20 +168,24 @@
   <li><a href="contact.html">Contact</a>
 </li>
 </ul>
-</section>
-<section>
+
+    <div class="footer-col" >
     <h4>Suivez-nous</h4>
-</section>
-    <div class="footer-col">
+
+    <div class="social-icons">
         <h4>Réseaux sociaux</h4>
-        <a href="#">twitter</a>
-        <a href="#">Linkedin</a>
-        <a href="#">Facebook</a>
-        <a href="#">Instagram</a>
-        <a href="#">Youtube</a>
+        <a href="#" aria-label="Twitter/X" >X</a>
+        <a href="#" aria-label="Linkedin">li</a>
+        <a href="#" aria-label="Facebokk">f</a>
+        <a href="#" aria-label="Instagram">in</a>
+        <a href="#" aria-label="Youtube">Youtube</a>
     </div>
+     </div>
+      <div class="footer-bottom">
+
     <button id="back-to-top">↑</button>
     <p>© <span id="year"></span>AfriConnectSummit.Tous droits réservés</p>
+     </div>
     <p><a href="#"Retour en haut></a></p>
  </footer>
 </body>
