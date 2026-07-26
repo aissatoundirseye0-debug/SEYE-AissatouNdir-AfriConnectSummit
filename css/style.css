@@ -949,3 +949,48 @@ table{
 @media(max-width: 992px) {
    .flex-container { flex-direction: column; }
 }
+
+ .tab-content{
+    display:none;
+}
+
+.tab-content.active{
+    display:block;
+}
+
+.tab-btn.active{
+    background:#0b3d91;
+    color:white;
+}
+
+
+@media(max-width:768px){
+
+.hamburger{
+    display:block;
+    cursor:pointer;
+}
+
+.hamburger span{
+    display:block;
+    width:30px;
+    height:3px;
+    background:white;
+    margin:5px 0;
+}
+
+.nav-links{
+    display:none;
+    flex-direction:column;
+    position:absolute;
+    top:70px;
+    right:20px;
+    background:#0b3d91;
+    padding:20px;
+    border-radius:10px;
+}
+
+.nav-links.active{
+    display:flex;
+}
+}
