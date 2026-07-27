@@ -34,7 +34,35 @@ function startCountdown() {
 
 startCountdown();
 
+// COMPTEURS ANIMÉS AU SCROLL
+function animateCounter(el) {
+  const target = +el.getAttribute('data-target');
+  let current = 0;
+  const step = Math.ceil(target / 100);
 
+  const interval = setInterval(() => {
+    current += step;
+    if (current >= target) {
+      current = target;
+      clearInterval(interval);
+    }
+    el.textContent = current;
+  }, 20);
+}
+
+const statsObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.querySelectorAll('.counter').forEach(animateCounter);
+      statsObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.3 });
+
+const statsSection = document.querySelector('.stats');
+if (statsSection) {
+  statsObserver.observe(statsSection);
+}
 
 // ===============================
 // ONGLETS PROGRAMME
@@ -195,3 +223,68 @@ if (backToTopBtn) {
         el.classList.add('fade-in');
         observer.observe(el);
     });
+    // ===============================
+// ===============================
+// Validation du formulaire
+// ===============================
+const form = document.getElementById("inscriptionForm");
+
+if (form) {
+
+    form.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        let valide = true;
+
+        const nom = document.getElementById("nom");
+        const email = document.getElementById("email");
+        const telephone = document.getElementById("telephone");
+        const type = document.getElementById("type");
+        const pays = document.getElementById("pays");
+        const message = document.getElementById("message");
+
+        document.querySelectorAll(".error").forEach(error => {
+            error.textContent = "";
+        });
+
+        if (nom.value.trim() === "") {
+            nom.nextElementSibling.textContent = "Veuillez saisir votre nom.";
+            valide = false;
+        }
+
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+        if (!emailRegex.test(email.value)) {
+            email.nextElementSibling.textContent = "Email invalide.";
+            valide = false;
+        }
+
+        if (telephone.value.trim().length < 9) {
+            telephone.nextElementSibling.textContent = "Téléphone invalide.";
+            valide = false;
+        }
+
+        if (type.value === "") {
+            type.nextElementSibling.textContent = "Choisissez un type.";
+            valide = false;
+        }
+
+        if (pays.value === "") {
+            pays.nextElementSibling.textContent = "Choisissez un pays.";
+            valide = false;
+        }
+
+        if (message.value.trim().length < 10) {
+            message.nextElementSibling.textContent = "Le message doit contenir au moins 10 caractères.";
+            valide = false;
+        }
+
+        if (valide) {
+            const success = document.getElementById("successMessage");
+            success.style.display = "block";
+            success.textContent = "✅ Votre inscription a été envoyée avec succès !";
+            form.reset();
+        }
+    });
+
+}

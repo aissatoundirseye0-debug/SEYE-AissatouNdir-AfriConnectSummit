@@ -1187,3 +1187,24 @@ body {
     opacity: 1;
     transform: translateY(0);
 }
+.form-message{
+    display: none;
+    padding: 15px 20px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    font-weight: 600;
+    text-align: center;
+    background: #d1fae5; /* vert clair */
+    color: #065f46;
+    border: 1px solid #10b981;
+    animation: slideDown 0.5s ease;
+}
+body.dark.form-message{
+    background: #064e3b;
+    color: #d1fae5;
+    border: 1px solid #10b981;
+}
+@keyframes slideDown{
+    from{ opacity: 0; transform: translateY(-10px); }
+    to{ opacity: 1; transform: translateY(0); }
+}
