@@ -1,10 +1,22 @@
 <!--VARIABLES-->
+
 :root{
+    --bg: #f4f4f4;
+    --text: #222;
+    --card-bg: #ffffff;
+    --navbar-bg: #0b3d91;
     --primary:#0b3d91;
     --secondary:#2563eb;
     --accent:#f59e0b;
     --dark:#0b1b2a;
     --white:white;
+}
+
+[data-theme="dark"]{
+    --bg: #121212;
+    --text: #e5e5e5;
+    --card-bg: #1e1e1e;
+    --navbar-bg: #0a0a0a;
 }
 
 /* ===========================
@@ -75,6 +87,7 @@ h2{
 .logo{
     font-size:28px;
     font-weight:bold;
+    
 }
 
 .nav-links{
@@ -124,7 +137,9 @@ h2{
 
     background:
     linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
-    linear-gradient(135deg,#0b3d91,#2563eb);
+    url('../images/WhatsApp\ Image\ 2026-06-11\ at\ 18.39.56\ fond\ noir.jpeg');
+    background-size:cover;
+    background-position:center;
 }
 
 .hero h1{
@@ -993,4 +1008,182 @@ table{
 .nav-links.active{
     display:flex;
 }
+}
+
+/* ===========================
+   DARK MODE
+=========================== */
+
+body {
+    transition: background .3s, color .3s;
+}
+
+[data-theme="dark"] body{
+    background:#121212;
+    color:#e5e5e5;
+}
+
+[data-theme="dark"] .navbar{
+    background:#0a0a0a;
+}
+
+[data-theme="dark"] h1,
+[data-theme="dark"] h2,
+[data-theme="dark"] h3,
+[data-theme="dark"] h4{
+    color:#e5e5e5;
+}
+
+[data-theme="dark"] .stats,
+[data-theme="dark"] .stat,
+[data-theme="dark"] .card,
+[data-theme="dark"] .speaker-card,
+[data-theme="dark"] .sponsors article,
+[data-theme="dark"] .intervenant-card,
+[data-theme="dark"] .tab-content,
+[data-theme="dark"] .thematique,
+[data-theme="dark"] .info-col,
+[data-theme="dark"] .faq details{
+    background:#1e1e1e;
+    color:#e5e5e5;
+}
+
+[data-theme="dark"] .sponsors{
+    background:#181818;
+}
+
+[data-theme="dark"] #countdown div{
+    background:#1e1e1e;
+}
+
+[data-theme="dark"] #countdown span{
+    color:#f59e0b;
+}
+
+[data-theme="dark"] #countdown div p{
+    color:#e5e5e5;
+}
+
+[data-theme="dark"] .counter,
+[data-theme="dark"] .card h3,
+[data-theme="dark"] .speaker-card h4,
+[data-theme="dark"] .intervenant-card h3,
+[data-theme="dark"] .sponsors h3,
+[data-theme="dark"] .thematique h3,
+[data-theme="dark"] .tab-content h3,
+[data-theme="dark"] .info-col h3{
+    color:#f59e0b;
+}
+
+[data-theme="dark"] .speaker-card p,
+[data-theme="dark"] .sponsors p,
+[data-theme="dark"] .thematique p,
+[data-theme="dark"] .pays{
+    color:#aaa;
+}
+
+[data-theme="dark"] .filtre-btn,
+[data-theme="dark"] .tab-btn{
+    background:#2a2a2a;
+    color:#e5e5e5;
+}
+
+[data-theme="dark"] .filtre-btn.active,
+[data-theme="dark"] .tab-btn.active,
+[data-theme="dark"] .filtre-btn:hover,
+[data-theme="dark"] .tab-btn:hover{
+    background:#f59e0b;
+    color:#121212;
+}
+
+[data-theme="dark"] table th{
+    background:#0a0a0a;
+}
+
+[data-theme="dark"] table td{
+    border-bottom:1px solid #333;
+}
+
+[data-theme="dark"] table tr:nth-child(even){
+    background:#1a1a1a;
+}
+
+[data-theme="dark"] table tr:hover{
+    background:#2a2a2a;
+}
+
+[data-theme="dark"] .form-group label{
+    color:#e5e5e5;
+}
+
+[data-theme="dark"] .form-group input,
+[data-theme="dark"] .form-group select,
+[data-theme="dark"] .form-group textarea{
+    background:#1e1e1e;
+    color:#e5e5e5;
+    border-color:#444;
+}
+
+[data-theme="dark"] .faq summary{
+    color:#f59e0b;
+}
+
+[data-theme="dark"] .faq details p{
+    color:#ccc;
+}
+
+[data-theme="dark"] #theme-toggle{
+    background:#1e1e1e;
+    color:#f59e0b;
+}
+/* ===========================
+   BOUTON RETOUR EN HAUT
+=========================== */
+
+#back-to-top{
+    position:fixed;
+    bottom:30px;
+    right:30px;
+
+    width:50px;
+    height:50px;
+
+    background:#f59e0b;
+    color:white;
+
+    border:none;
+    border-radius:50%;
+
+    font-size:22px;
+    cursor:pointer;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.2);
+
+    opacity:0;
+    visibility:hidden;
+    transform:translateY(20px);
+    transition:all .3s ease;
+
+    z-index:999;
+}
+
+#back-to-top.visible{
+    opacity:1;
+    visibility:visible;
+    transform:translateY(0);
+}
+
+#back-to-top:hover{
+    background:#d97706;
+}
+
+/* ANIMATION APPARITION AU SCROLL */
+.fade-in {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+.fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
 }
